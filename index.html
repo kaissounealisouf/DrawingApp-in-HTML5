@@ -1,0 +1,118 @@
+ 
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- This app only works for no touchscreen laptop
+and it doesn't require the internet to download your work, you did.
+is done by kaissoune
+PASS or hover THE ICON YOU SEE,guidance or watch https://www.youtube.com/@kaissoune,
+ IT IS FREE TO USE-->
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+    <link href='style.css' type='text/css' rel='stylesheet' />
+    
+  
+</head>
+ 
+<body>
+    <div id='menu'><a onclick='formatOption()' title='Noble RespectedUser ▼clik pls'
+            style="color:white;display: flex;justify-content: center;">▼</a></div>
+    <div id='formatOption'>
+        <input class="RespectedUser" type='text' name='IfSheSelectesTheFile' id='Selected' value=''
+            placeholder="Noble god bless you"></input>
+ 
+        </p>&nbsp;
+ 
+        <span>Noble choose format:</span>
+ 
+        <select id='format' name='format' value=''>
+ 
+            <option value='PNG'>PNG</option>
+ 
+            <option value='WEBP'>WEB</option>
+ 
+ 
+        </select>
+ 
+        <button class="button" onclick='save()' id='btn_save'>Download</button>
+ 
+    </div>
+ 
+    <div class='field'>
+ 
+        <canvas id='canvas'></canvas>
+ 
+        <div class='tools'>
+ 
+            <button style="background-image: linear-gradient(to right, #22ffbd4c 0%, #622f8e  51%, #DA22FF  100%)"
+                onclick='undo()' class='button' id='desfazer'>ClearOne</button>
+ 
+            <button style=" background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)"
+                onclick='clear_canvas()' class='button' id='apagar'>Clear All</button>
+ 
+            <div id='tamh' style="background-color:white;" onclick='sizeOption() '>
+ 
+                <pre style="border:1e solid black ;">2dSize</pre>
+                <div id='size'>
+ 
+                    <input onInput='draw_width = this.value' type="range" min='0' max='150' value='2' class="pen-range"
+                        id='pen_range'>
+                    </input><span id='text_range'>9em</span>
+ 
+                </div>
+ 
+            </div>
+ 
+            <div id='icons'>
+                <!-- this image is for the pencil ,should change it  -->
+                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIHsqXQuPEJCLf6SrMIc9KaaP0s3G6xIAxw&usqp=CAU'
+                    title='pencil' id='pencil' onclick='tools("pencil")' />
+ 
+                <img src='https://i.pinimg.com/736x/09/fd/a3/09fda310e173d8585dc24e9372b03178.jpg' title='Erase'
+                    id='Erase' onclick='tools("Erase")' />
+                <!-- this image is for the erase -->
+ 
+                <img src='https://image.shutterstock.com/image-vector/one-continuous-line-drawing-hand-260nw-1777351367.jpg'
+                    style="background-color:white;" title='Line' id='lin' onclick='tools("lin")' />
+                <!-- this image is for the line,  -->
+ 
+            </div>
+ 
+            <div id='linha' onclick='linecap_exib()'>
+                <!-- This is the heart of the application -->
+                <div></div>
+ 
+            </div>
+ 
+            <div id='cor_atual' onclick='palette()'></div>
+ 
+        </div>
+    </div>
+ 
+ 
+    <div id='palette'>
+        <!--All color--->
+ 
+        <div onclick='corAtual("#000000")'></div>
+        <p>
+ 
+            <input
+                onInput="draw_color = this.value; document.getElementById('cor_atual').style.background = draw_color;"
+                type="color" class='color-picker'></input>
+        </p>
+ 
+    </div>
+ <script src="index.js"></script>
+</body>
+ 
+</html>
+
+
+
+
+
+
+

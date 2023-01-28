@@ -1,0 +1,196 @@
+ body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            /* background: #313131; */
+            background-color: hsl(180, 33%, 64%);
+        }
+ 
+        canvas {
+            position: absolute;
+            box-shadow: -3px 2px 9px 6px black;
+            cursor: crosshair;
+            left: 90px;
+            background: white;
+        }
+ 
+        .tools {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 100%;
+            justify-content: left;
+            flex-direction: row;
+        }
+ 
+        #palette {
+            position: absolute;
+            top: 250px;
+            z-index: 2;
+            width: 300px;
+            display: none;
+        }
+ 
+        .button {
+            color: #fff;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+            border-radius: 5px;
+            font-family: "Montserrat";
+            font-weight: 500;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            background-color: #a28f9d;
+        }
+ 
+        .button:hover {
+            background-color: #84a98c;
+        }
+ 
+        #palette div {
+            padding: 3px;
+            border: 1px solid black;
+ 
+        }
+ 
+        img {
+            /*  */
+            position: relative;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+ 
+        #cor_atual {
+            position: absolute;
+            top: 200px;
+            width: 90px;
+            /* This is the color default,for palette. background-color:#3541c6; */
+            /*Please honourable set your favourite color */
+            height: 50px;
+            background-color: hsla(55, 72%, 48%, 0.459);
+ 
+        }
+ 
+        #tamh {
+            position: absolute;
+            left: 13px;
+            top: 300px;
+            /* top: if you calculs and get the stanslation and ratotion;
+         it will be reponsible for mobile phone*/
+            width: 45px;
+            height: 45px;
+            border-radius: 40px;
+            background: #222;
+            cursor: pointer;
+        }
+ 
+        #size {
+            position: absolute;
+            display: none;
+            top: -100px;
+            left: 100px;
+            width: 200px;
+            height: 310px;
+ 
+        }
+ 
+        .tools .button {
+            width: 70px;
+            height: 40px;
+            border: 2px solid white;
+            cursor: pointer;
+            color: white;
+            background: #222;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+ 
+        #desfazer {
+            position: absolute;
+            bottom: 10px;
+            left: -10px;
+        }
+ 
+        #apagar {
+            position: absolute;
+            bottom: 60px;
+            left: -10px;
+        }
+ 
+        .color-picker {
+            position: absolute;
+            bottom: 1px;
+            right: -5px;
+            margin: 0 10px;
+            height: 25px;
+            cursor: pointer;
+        }
+ 
+        #text_range {
+            position: absolute;
+            top: 289.999999px;
+            right: 33px;
+            bottom: 0.1px;
+        }
+ 
+        .pen-range {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            background-color: #3541c6;
+        }
+ 
+        .RespectedUser {
+            position: absolute;
+            bottom: 5px;
+            text-align-last: initial;
+            left: 5px;
+            font: 700;
+            font: 1em sans-serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #15162120;
+        }
+ 
+        #formatOption {
+            position: absolute;
+            top: 25px;
+            padding: 10px 20px;
+            left: 90px;
+            background: white;
+            width: 150px;
+            height: 120px;
+            border: 2px solid cadetblue;
+            z-index: 1;
+            display: none;
+        }
+ 
+        #formatOption input[type='text'] {
+            position: absolute;
+            left: 7px;
+            border-radius: 7px;
+            outline: none;
+            border: none;
+        }
+ 
+        #formatOption select {
+            position: absolute;
+            top: 70px;
+            left: 60px;
+        }
+ 
+        #formatOption span {
+            position: absolute;
+            left: 30px;
+            top: 40px;
+        }
+ 
+        #formatOption #btn_save {
+            position: absolute;
+            bottom: 7px;
+            left: 10px;
+            width: 90%;
+            cursor: pointer;
+        }
+   
